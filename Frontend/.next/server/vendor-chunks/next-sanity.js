@@ -1,0 +1,35 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "vendor-chunks/next-sanity";
+exports.ids = ["vendor-chunks/next-sanity"];
+exports.modules = {
+
+/***/ "(rsc)/./node_modules/next-sanity/dist/index.cjs":
+/*!*************************************************!*\
+  !*** ./node_modules/next-sanity/dist/index.cjs ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\nvar client = __webpack_require__(/*! @sanity/preview-kit/client */ \"(rsc)/./node_modules/@sanity/preview-kit/dist/client.cjs\");\nvar groq = __webpack_require__(/*! groq */ \"(rsc)/./node_modules/groq/lib/groq.js\");\nfunction _interopDefaultCompat(e) {\n    return e && typeof e === \"object\" && \"default\" in e ? e : {\n        default: e\n    };\n}\nvar groq__default = /*#__PURE__*/ _interopDefaultCompat(groq);\nfunction createClient(config) {\n    let { // eslint-disable-next-line prefer-const, no-process-env\n    studioUrl = process.env.NEXT_PUBLIC_SANITY_STUDIO_URL, encodeSourceMap = false } = config;\n    if (encodeSourceMap === \"auto\" && process.env.NEXT_PUBLIC_VERCEL_ENV === \"preview\") {\n        encodeSourceMap = true;\n    }\n    return client.createClient({\n        ...config,\n        studioUrl,\n        encodeSourceMap\n    });\n}\nObject.defineProperty(exports, \"groq\", ({\n    enumerable: true,\n    get: function() {\n        return groq__default.default;\n    }\n}));\nexports.createClient = createClient; //# sourceMappingURL=index.cjs.map\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC1zYW5pdHkvZGlzdC9pbmRleC5janMiLCJtYXBwaW5ncyI6IkFBQUE7QUFFQUEsOENBQTZDO0lBQzNDRyxPQUFPO0FBQ1QsQ0FBQyxFQUFDO0FBQ0YsSUFBSUMsU0FBU0MsbUJBQU9BLENBQUM7QUFDckIsSUFBSUMsT0FBT0QsbUJBQU9BLENBQUM7QUFDbkIsU0FBU0Usc0JBQXNCQyxDQUFDO0lBQzlCLE9BQU9BLEtBQUssT0FBT0EsTUFBTSxZQUFZLGFBQWFBLElBQUlBLElBQUk7UUFDeERDLFNBQVNEO0lBQ1g7QUFDRjtBQUNBLElBQUlFLGdCQUFnQixXQUFXLEdBQUVILHNCQUFzQkQ7QUFDdkQsU0FBU0ssYUFBYUMsTUFBTTtJQUMxQixJQUFJLEVBQ0Ysd0RBQXdEO0lBQ3hEQyxZQUFZQyxRQUFRQyxHQUFHLENBQUNDLDZCQUE2QixFQUNyREMsa0JBQWtCLEtBQUssRUFDeEIsR0FBR0w7SUFDSixJQUFJSyxvQkFBb0IsVUFBVUgsUUFBUUMsR0FBRyxDQUFDRyxzQkFBc0IsS0FBSyxXQUFXO1FBQ2xGRCxrQkFBa0I7SUFDcEI7SUFDQSxPQUFPYixPQUFPTyxZQUFZLENBQUM7UUFDekIsR0FBR0MsTUFBTTtRQUNUQztRQUNBSTtJQUNGO0FBQ0Y7QUFDQWpCLHdDQUF1QztJQUNyQ21CLFlBQVk7SUFDWkMsS0FBSztRQUNILE9BQU9WLGNBQWNELE9BQU87SUFDOUI7QUFDRixDQUFDLEVBQUM7QUFDRlAsb0JBQW9CLEdBQUdTLGNBQ3ZCLGtDQUFrQyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL25vZGVfbW9kdWxlcy9uZXh0LXNhbml0eS9kaXN0L2luZGV4LmNqcz8xOTE1Il0sInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0JztcblxuT2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsICdfX2VzTW9kdWxlJywge1xuICB2YWx1ZTogdHJ1ZVxufSk7XG52YXIgY2xpZW50ID0gcmVxdWlyZSgnQHNhbml0eS9wcmV2aWV3LWtpdC9jbGllbnQnKTtcbnZhciBncm9xID0gcmVxdWlyZSgnZ3JvcScpO1xuZnVuY3Rpb24gX2ludGVyb3BEZWZhdWx0Q29tcGF0KGUpIHtcbiAgcmV0dXJuIGUgJiYgdHlwZW9mIGUgPT09ICdvYmplY3QnICYmICdkZWZhdWx0JyBpbiBlID8gZSA6IHtcbiAgICBkZWZhdWx0OiBlXG4gIH07XG59XG52YXIgZ3JvcV9fZGVmYXVsdCA9IC8qI19fUFVSRV9fKi9faW50ZXJvcERlZmF1bHRDb21wYXQoZ3JvcSk7XG5mdW5jdGlvbiBjcmVhdGVDbGllbnQoY29uZmlnKSB7XG4gIGxldCB7XG4gICAgLy8gZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIHByZWZlci1jb25zdCwgbm8tcHJvY2Vzcy1lbnZcbiAgICBzdHVkaW9VcmwgPSBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TQU5JVFlfU1RVRElPX1VSTCxcbiAgICBlbmNvZGVTb3VyY2VNYXAgPSBmYWxzZVxuICB9ID0gY29uZmlnO1xuICBpZiAoZW5jb2RlU291cmNlTWFwID09PSBcImF1dG9cIiAmJiBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19WRVJDRUxfRU5WID09PSBcInByZXZpZXdcIikge1xuICAgIGVuY29kZVNvdXJjZU1hcCA9IHRydWU7XG4gIH1cbiAgcmV0dXJuIGNsaWVudC5jcmVhdGVDbGllbnQoe1xuICAgIC4uLmNvbmZpZyxcbiAgICBzdHVkaW9VcmwsXG4gICAgZW5jb2RlU291cmNlTWFwXG4gIH0pO1xufVxuT2JqZWN0LmRlZmluZVByb3BlcnR5KGV4cG9ydHMsICdncm9xJywge1xuICBlbnVtZXJhYmxlOiB0cnVlLFxuICBnZXQ6IGZ1bmN0aW9uICgpIHtcbiAgICByZXR1cm4gZ3JvcV9fZGVmYXVsdC5kZWZhdWx0O1xuICB9XG59KTtcbmV4cG9ydHMuY3JlYXRlQ2xpZW50ID0gY3JlYXRlQ2xpZW50O1xuLy8jIHNvdXJjZU1hcHBpbmdVUkw9aW5kZXguY2pzLm1hcFxuIl0sIm5hbWVzIjpbIk9iamVjdCIsImRlZmluZVByb3BlcnR5IiwiZXhwb3J0cyIsInZhbHVlIiwiY2xpZW50IiwicmVxdWlyZSIsImdyb3EiLCJfaW50ZXJvcERlZmF1bHRDb21wYXQiLCJlIiwiZGVmYXVsdCIsImdyb3FfX2RlZmF1bHQiLCJjcmVhdGVDbGllbnQiLCJjb25maWciLCJzdHVkaW9VcmwiLCJwcm9jZXNzIiwiZW52IiwiTkVYVF9QVUJMSUNfU0FOSVRZX1NUVURJT19VUkwiLCJlbmNvZGVTb3VyY2VNYXAiLCJORVhUX1BVQkxJQ19WRVJDRUxfRU5WIiwiZW51bWVyYWJsZSIsImdldCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next-sanity/dist/index.cjs\n");
+
+/***/ }),
+
+/***/ "(rsc)/./node_modules/next-sanity/dist/index.cjs.js":
+/*!****************************************************!*\
+  !*** ./node_modules/next-sanity/dist/index.cjs.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createClient: () => (/* binding */ createClient),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   groq: () => (/* binding */ groq)\n/* harmony export */ });\n/* harmony import */ var _index_cjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.cjs */ \"(rsc)/./node_modules/next-sanity/dist/index.cjs\");\n\nconst groq = _index_cjs__WEBPACK_IMPORTED_MODULE_0__.groq;\nconst createClient = _index_cjs__WEBPACK_IMPORTED_MODULE_0__.createClient;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_index_cjs__WEBPACK_IMPORTED_MODULE_0__.default);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC1zYW5pdHkvZGlzdC9pbmRleC5janMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUE4QjtBQUV2QixNQUFNQyxPQUFPRCw0Q0FBUSxDQUFDO0FBQ3RCLE1BQU1FLGVBQWVGLG9EQUFnQixDQUFDO0FBRTdDLGlFQUFlQSx1Q0FBR0EsQ0FBQ0csT0FBTyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vbm9kZV9tb2R1bGVzL25leHQtc2FuaXR5L2Rpc3QvaW5kZXguY2pzLmpzP2VhZDEiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGNqcyBmcm9tICcuL2luZGV4LmNqcyc7XG5cbmV4cG9ydCBjb25zdCBncm9xID0gY2pzLmdyb3E7XG5leHBvcnQgY29uc3QgY3JlYXRlQ2xpZW50ID0gY2pzLmNyZWF0ZUNsaWVudDtcblxuZXhwb3J0IGRlZmF1bHQgY2pzLmRlZmF1bHQ7XG4iXSwibmFtZXMiOlsiY2pzIiwiZ3JvcSIsImNyZWF0ZUNsaWVudCIsImRlZmF1bHQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next-sanity/dist/index.cjs.js\n");
+
+/***/ })
+
+};
+;
